@@ -46,7 +46,7 @@ jobs:
       run: rm ../Release/VanillaMultiMonitorFix.pdb
       
     - name: Create Release
-    - uses: "marvinpinto/action-automatic-releases@latest"
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         files: |
