@@ -37,8 +37,3 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}},Platform=${{env.BUILD_PLATFORM}} ${{env.SOLUTION_FILE_PATH}}
       
-    - name: Create Release
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: "src/Release/*"
-
