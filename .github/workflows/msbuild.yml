@@ -41,9 +41,6 @@ jobs:
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}},Platform=${{env.BUILD_PLATFORM}} ${{env.SOLUTION_FILE_PATH}}
-    
-    - name: Remove pdb from artifact
-      run: rm ../src/Release/VanillaMultiMonitorFix.pdb
       
     - name: Create Release
       uses: "marvinpinto/action-automatic-releases@latest"
