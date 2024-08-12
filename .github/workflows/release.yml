@@ -1,10 +1,9 @@
-name: build-only
+name: release-on-tag
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: 
+    push:
+      tags:
+      - '*'
 
 env:
   # Path to the solution file relative to the root of the project.
@@ -41,4 +40,3 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "src/Release/*"
-
