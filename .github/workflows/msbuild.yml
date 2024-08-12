@@ -46,6 +46,7 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
         files: |
           ../src/Release/VMMFix_preferred_monitor.txt
           ../src/Release/VanillaMultiMonitorFix.dll
