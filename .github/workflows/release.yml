@@ -16,7 +16,7 @@ env:
   BUILD_PLATFORM: x86
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
