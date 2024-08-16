@@ -37,7 +37,7 @@ jobs:
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}},Platform=${{env.BUILD_PLATFORM}} ${{env.SOLUTION_FILE_PATH}}
     
     - name: Zip artifact
-      run: Get-ChildItem -Path src/Release/VanillaMultiMonitorFix.dll, src/Release/VMMFix_preferred_monitor.txt | Compress-Archive -DestinationPath src/Release/release.zip
+      run: Get-ChildItem -Path src/Release/VanillaMultiMonitorFix.dll, src/Release/VMMFix_preferred_monitor.txt, src/Release/ShowAllDisplayDevices.exe | Compress-Archive -DestinationPath src/Release/release.zip
     
     - name: Create Release
       uses: ncipollo/release-action@v1
