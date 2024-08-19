@@ -1,5 +1,5 @@
 # Vanilla Multi Monitor Fix
-This is a DLL hook based fix for WoW 1.12 client misbehaving then you have multiple monitors connected with differing supported resolutions.
+This is a DLL hook based fix for WoW 1.12 client misbehaving when you have multiple monitors connected with differing supported resolutions.
 
 ## Installation
 1. Download the most recent [release.zip](https://github.com/Mates1500/VanillaMultiMonitorFix/releases/) and unzip the files to the WoW folder. 
